@@ -1,0 +1,7 @@
+.newsban::after{
+    background-image: url(../img/banner/news.jpg);
+}
+.news article{
+    padding: 0px 20px;
+    overflow: hidden;
+}

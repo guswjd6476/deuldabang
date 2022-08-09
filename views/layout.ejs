@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>들다방</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/shop.css">
+</head>
+<body>
+    <header id="header">
+        <%- include('header') %>  
+    </header>
+    <main>
+        <%- body %>
+    </main>
+    <footer>
+        <div class="w1440 footer_wrapper">
+            <ul class="footer_mt">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">개인정보 보호정책</a></li>
+                <li><a href="">문의</a></li>
+                <li><a href="">쇼핑몰</a></li>
+            </ul>
+            <div class="footermain">
+                <div class="footer_t logo">
+                    <img src="./img/logo/logo2.png">
+                </div>
+                <div class="footer_m">
+                    <div class="footer_c_info">
+                        <div class="f_info">
+                            <span>주소</span>
+                            서울시 종로구 동숭길 25, 3층 2호
+                        </div>
+                        <div class="f_info">
+                            <span>전화</span>
+                            02-2276-0405
+                        </div>
+                        <div class="f_info">
+                            <span>이메일</span>
+                            deuldabang@gmail.com
+                        </div>
+                    </div>
+                    <div class="footer_link">
+                        <div>노란들판을 일구는 농부들</div>
+                        <ul class="f_link_list">
+                            <li><a href="">사단법인노란들판</a></li>
+                            <li><a href="">노들장애인야학</a></li>
+                            <li><a href="">노들장애인자립생활센터</a></li>
+                            <li><a href="">사회적기업 노란들판</a></li>
+                            <li><a href="">장애인자립생활센터 판</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>    
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/525694343d.js" crossorigin="anonymous"></script>
+<script src="../js/slide.js"></script>
+<script src="../js/href.js"></script>
+<script src="../js/style.js"></script>
+</html>

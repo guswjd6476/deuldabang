@@ -1,0 +1,276 @@
+.top_ban_wrap{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.top_ban::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: scale(1.2);
+    transition: all 2s ease-in-out;
+    z-index: -1;
+}
+.top_ban.gogo::after{
+    transform: scale(1);
+    opacity: 1;
+}
+.introban::after{
+    background-image: url(../img/banner/intro.jpg);
+}
+
+
+.bg{
+    position: relative;
+    padding: 60px 0;
+    width: 100%;
+    height: 100%;
+}
+.subpgwrap{
+    position: relative;
+    width: 100%;
+}
+.text100{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    padding: 20px 0;
+}
+.b{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.y{
+    background-color: rgba(255, 191, 67, 0.5);
+}
+.g{
+    background-color: rgba(199, 234, 60, 0.5);
+}
+.bc{
+    color: #000;
+}
+.wc{
+    color: #fff;
+}
+.intro article{
+    padding: 50px 0;
+}
+.subpg{
+    padding: 0 20px;
+}
+.subbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.subbox .imgbox{
+    width: 33.333%;
+}
+.imgbox img{
+    width: 100%;
+    height: 100%;
+}
+.txtbox strong{
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+.text100 .textbox strong{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.subpg .textbox{
+    padding: 40px 0px;
+}
+.subpg .textbox p{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.banbox{
+    width: 100%;
+    padding-top: 40%;
+    position: relative;
+    margin: 50px 0 30px;
+}
+.banbox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.intro .item_sub{
+    padding: 50px 0;
+}
+.intro .item_sub strong{
+    font-size: 46px;
+}
+.intro .item_sub h4{
+    font-size: 24px;
+}
+.intro .item_sub h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+.coffee_div{
+    display: flex;
+    justify-content: left;
+}
+.coffee_box{
+    padding: 40px 0;
+    border-bottom: 1px solid #777;
+}
+.coffee_box .item_sub{
+    padding-top : 0;
+}
+.coffee{
+    width: 16.6% ;
+    padding: 10px;
+}
+.coffeelong{
+    width: 33.33%;
+    padding: 10px;
+}
+.coffeem{
+    width: 25%;
+    padding: 10px;
+    background-image: url(../img/intro/coffee/te);
+}
+.coffees{
+    width: 12.5%;
+    padding: 10px;
+}
+.coffee_sub{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.coffee .coffee_sub, .coffees .coffee_sub{
+    justify-content: center;
+}
+.w40{
+    width: 40%;
+}
+.zido{
+    width: 100%;
+    height: 100%;
+}
+.zido>iframe{
+    width: 100%;
+}
+.place_wrap>div{
+    width: 50%;
+}
+.place_wrap .item_sub{
+    padding: 20px 0;
+}
+.place_wrap .item_sub h2 span{
+    padding: 3px;
+    background-color :mediumblue;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .intro .item_sub{
+        padding: 20px 0;
+    }
+    .intro .item_sub strong{
+        font-size: 26px;
+    }
+    .intro .item_sub h4 {
+        font-size: 18px;
+    }
+    .intro .item_sub h2{
+        font-size: 16px;
+    }
+    .text100 .textbox strong{
+        font-size: 26px;
+    }
+    .text100{
+        padding: 40px 0;
+    }
+    .coffee_div{
+        flex-wrap: wrap;
+    }
+    .coffee{
+        width: 25% ;
+    }
+    .coffeelong{
+        width: 50%;
+    }
+    .coffeem{
+        width: 50%;
+    }
+    .coffees{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .subbox{
+        display: block;
+    }
+    .subbox .imgbox{
+        width: 100%;
+        height: 250px;
+    }
+    .subbox .imgbox:last-child{
+        display: none;
+    }
+    .subbox .imgbox img{
+        height: 100%;
+        object-fit: cover;
+    }
+   
+    .text100 .textbox strong{
+        font-size: 22px;
+    }
+    .banbox{
+        padding-top: 60%;
+    }
+    .place_wrap>div{
+        width: 100%;
+    }
+    .place_wrap .item_sub h2 span{
+        font-size: 16px;
+        padding: 2px;
+    }
+    .coffee{
+        width: 50%; 
+        padding: 15px 0;
+    }
+    .coffeelong{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .coffeem{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .coffees{
+        width: 50%;
+        padding: 15px 0;
+    }
+
+}
